@@ -75,3 +75,51 @@ const carlos = {
 }
 
 console.log(saludar(carlos))
+
+// 
+// class Personaje {
+//     nombre;
+//     vida;
+//     fuerza;
+//     energia;
+  
+//     constructor(name, life, strength, energy) {
+//       this.nombre = name
+//       this.vida = life
+//       this.fuerza = strength
+//       this.energia = energy
+//     }
+// }
+
+// Jonathan code Ejercicio 1
+class Personaje {
+    // Atributos existentes...
+    constructor(nombre,edad,peso,estatura,energia){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.peso = peso;
+        this.estatura = estatura;
+        this.energia = energia;
+    }
+  
+    correr(distancia) {
+      return this.energia = this.energia - distancia;
+    }
+  
+    descansar(tiempo) {
+      // Incrementa la energía en función del tiempo de descanso.
+      // Por ejemplo, cada unidad de tiempo incrementa 2 puntos de energía.
+      return this.energia = this.energia + (tiempo * 2);
+    }
+  }
+  
+  const flash = new Personaje("Barry Allen",20,50,1.73,100);
+  console.log("Flash corriò y redujo su energia en " + flash.correr(50) + " puntos");
+  console.log(flash.energia)
+  console.log("Flash descansó y recuperó su energia en " + flash.descansar(5) + " puntos");
+  console.log(flash.energia)
+
+
+// const bart = new Personaje("BART", 10, 5, 5)
+// console.log(bart)
+

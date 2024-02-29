@@ -70,10 +70,13 @@ class Personaje {
 
   addItem(item) {
     // Añade un ítem al inventario.
+    push
   }
 
   removerItem(item) {
     // Remueve un ítem del inventario.
+    // buscar el elemento que quiero remover en el array
+    // y sacarlos de la lista indexof o filter*
   }
 }
 
