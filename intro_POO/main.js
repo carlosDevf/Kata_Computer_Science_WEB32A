@@ -11,7 +11,7 @@ class Mascota {
     years
     owner
     patas = 4
-
+    
     constructor(nombre, tipo, edad, dueno){
         this.name = nombre
         this.type = tipo
@@ -58,9 +58,20 @@ console.log(mascota2.patas)
 mascota2.changeNameNumberPatas(3)
 console.log(mascota2.patas)
 
+/// Como en la actualidad son las paginas web DATOS VIVOS
+const saludar = (person) => {
+    return `Hola mi nombre es ${person.name}`
+}
 
+const changeName = (nombre) => {
+    /// funcion que se conecte a la base de datos y cambien el dato
+}
 
-// Ejercico de abstraccion de datos
-// Escuela => 
-// Personas => nombre, edad, direccion, 
-// Maestros, Alumnos, Administrativa
+// base de datos // no lo constri apartir de un objeto
+// map o con un for
+// cambio en contrato 
+const carlos = {
+    nombre: "Carlos"
+}
+
+console.log(saludar(carlos))
