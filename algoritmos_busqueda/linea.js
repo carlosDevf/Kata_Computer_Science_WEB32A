@@ -41,8 +41,8 @@ function busquedaSecuencial (arreglo, precioMinimo, precioMaximo) {
 
 const match = busquedaSecuencial(productos, 10, 30)
 console.log(match)
-
 /// metodos de interacion filter, find // de forma secuencial
+// 150 > linters > eslint // Prettier
 function busquedaConJS(productos, precioMinimo, precioMaximo){
     // calback
     // filter que retorna un arreglo
