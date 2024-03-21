@@ -62,4 +62,17 @@ function mixWords(arreglo) {
 const choisCPU = ["piedra", "papel", "tijeras"]
 const indexRandom = Math.floor(Math.random() * choisCPU.length)
  ////  0 4
-console.log(choisCPU[indexRandom])
+// console.log(choisCPU[indexRandom])
+
+//Nombre y calificaciones(arreglo de 5 números) y tiene un método para obtener el promedio.
+const calificaciones = ["10","5","7","8","6","6"]
+// promedio => sumamos todos los elementos y lo dividimos entre el numero de calificaciones
+// reduce
+function getPromedio (arreglo){
+    const sumatoria = arreglo.reduce((prevData, currentData) => Number(prevData) + Number(currentData), 0)    
+    return sumatoria / arreglo.length
+}
+
+console.log(getPromedio(calificaciones))
+
+
