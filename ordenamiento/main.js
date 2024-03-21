@@ -73,6 +73,5 @@ function getPromedio (arreglo){
     return sumatoria / arreglo.length
 }
 
-console.log(getPromedio(calificaciones))
 
 
