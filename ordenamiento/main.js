@@ -38,6 +38,7 @@ function calcularDistancia(coor) {
                         //[7,3]
                         // 0 1
                        //7x7     3x3
+                       //d = √((x2 - x1)² + (y2 - y1)²)
     return Math.sqrt(coor[0] * coor[0] + coor[1] * coor[1]) //3
 }
 
@@ -49,4 +50,16 @@ function sortDetPuntosEnUnMapa(arreglo) {
     })
 }
 
-console.log(sortDetPuntosEnUnMapa(coordenadas))
+// Dado el siguente arreglo, crea una funcion que acomode los elementos de manera random
+const letrasLocas = ["adios","hola","maximo","uno","despedida"]
+// 0.5 campana de Gauss
+function mixWords(arreglo) {
+    return arreglo.sort(() => Math.random() - 0.5)
+}
+
+//console.log(mixWords(letrasLocas))
+// recupera un elemento del array de forma aleatoria
+const choisCPU = ["piedra", "papel", "tijeras"]
+const indexRandom = Math.floor(Math.random() * choisCPU.length)
+ ////  0 4
+console.log(choisCPU[indexRandom])
