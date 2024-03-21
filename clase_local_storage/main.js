@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
     const data = new FormData(form) // COLECCION DE DE ELEMENTOS DEL FORM
     // Object => values, keys, entries    
     const { newItem } = Object.fromEntries(data) // ESTE ITERA ESA COLECCION 
-    // TODO: 
+    // TODO opcional: 
     // BORRAR EL INPUT AL MOMENTO DE AÑADIRLO A LA LISTA
     // validar que el newItem tenga sea valido
     // ¿ahora como lo recuperamos?
