@@ -37,5 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // añadirlo
     // meterlo en tareasporhacer
     // chequen la linea 17-21
+    tareas.forEach(t => {
+        const li = document.createElement("li") //<li>Con la tarea</li>
+        li.innerText = t
+        todoList.appendChild(li)
+        tareasporhacer.push(t)
+    })
 
 })
